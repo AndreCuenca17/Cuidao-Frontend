@@ -113,7 +113,7 @@ export default function CrimeForm() {
       });
       const data = await response.json();
       if (response.ok) {
-        setSuccessMessage('¡Denuncia registrada con éxito!');
+        
         setErrorMessage(''); // Limpiar errores si la respuesta es exitosa
       } else {
         setErrorMessage('');
@@ -153,7 +153,7 @@ export default function CrimeForm() {
       {/* Imagen encima del formulario */}
       <div style={{ marginBottom: '20px' }}>
        <img 
-          src="/images/denunciaDigital.png?height=60&width=60" 
+          src={`${process.env.PUBLIC_URL}/images/denunciaDigital.png?height=60&width=60`}
           alt="Descripción de la imagen" 
           style={{ width: '150px', height: 'auto', borderRadius: '5px' }}
         />

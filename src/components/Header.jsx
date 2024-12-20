@@ -7,7 +7,7 @@ export default function Header() {
         <header className="header"> {/* Aplica la clase 'header' */}
             <div className="logo-container">
                 <img
-                    src="/images/logoPolicia.png?height=60&width=60"
+                    src={`${process.env.PUBLIC_URL}/images/logoPolicia.png?height=60&width=60`}
                     alt="Logo de la policia"
                     width={140}
                     height={60}

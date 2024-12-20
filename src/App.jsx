@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Header from "./components/Header";
 import Sidebar from "./components/Sidebar";
 import MapViewer from "./components/MapViewer";
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Usa Routes en lugar de Switch
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import UbicacionPage from './components/Ubicacion'; // Importa el componente Ubicacion
 import CrimeForm from './components/CrimeForm';
 import SobreNosotros from "./components/SobreNosotros";

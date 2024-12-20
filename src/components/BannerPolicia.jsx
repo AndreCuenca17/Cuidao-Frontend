@@ -18,7 +18,7 @@ export default function Header() {
     <header className="header-container">
       <div className="banner">
         <img 
-          src="/images/banner.png?height=60&width=60" 
+          src={`${process.env.PUBLIC_URL}/images/banner.png?height=60&width=60`} 
           alt="Servicios Policiales Banner" 
           className="banner-image"
         />
